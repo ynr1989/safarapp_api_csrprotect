@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = 'rxqm0ep5d07yj$!obu0wtc8(ha2-yg(nryjw)hr^*ukbqv9n_0'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -40,7 +38,6 @@ INSTALLED_APPS = [
     # Patients applications
     'patients.apps.PatientsConfig',
 
-    # CORS
     'corsheaders',
 ]
 
@@ -78,7 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'safarapp.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -86,12 +82,14 @@ WSGI_APPLICATION = 'safarapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'tutorial',
+        'NAME': 'safarapp_db',
         'HOST': '127.0.0.1',
         'PORT': 27017,
     }
 }
 
+JWT_ACCESS_TOKEN_LIFE_SPAN = 60
+JWT_REFRESH_TOKEN_LIFE_SPAN = 360
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -111,6 +109,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+EST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000"
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -124,7 +132,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
