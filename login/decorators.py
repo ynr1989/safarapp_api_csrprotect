@@ -6,7 +6,6 @@ from .utils import check_token_validity, check_refresh_token_validity
 def token_authentication_required(view_func):
     def wrap(request, *arg, **kwarg):
         token_string = request.META['HTTP_AUTHORIZATION']
-
         auth_token = str(token_string).split()
 
         if len(auth_token) == 1 or len(auth_token) > 2:  # if array size 1 or more than 2

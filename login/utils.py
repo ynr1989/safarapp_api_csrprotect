@@ -1,5 +1,5 @@
 from django.conf import settings as conf_settings
-from patients.models import UserToken
+from users.models import UserToken
 import jwt
 
 SECRET_KEY = conf_settings.SECRET_KEY

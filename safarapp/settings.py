@@ -36,8 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Patients applications
-    'patients.apps.PatientsConfig',
+    'users.apps.UsersConfig',
 
+    'rest_framework',
+    'rest_framework_swagger',
+    'rest_framework_simplejwt',
     'corsheaders',
 ]
 
@@ -109,10 +112,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-EST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',
+        'rest_framework.parsers.JSONParser',
+    ]
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
