@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4f57fa-9b63-4016-950a-39ded36900f2" name="Default Changelist" comment="">
+    <list default="true" id="8c4f57fa-9b63-4016-950a-39ded36900f2" name="Default Changelist" comment="Updated the Patients to Users.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyvenv.cfg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
     </list>
@@ -51,7 +50,6 @@
     <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitRewordedCommitMessages">
     <option name="onto" value="67d72206ae03ed046cab90d7cadc1c9033d901f2" />
@@ -69,7 +67,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../git_code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -137,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594659909777</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated the Patients to Users.">
+      <created>1594722096861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594722096861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -202,7 +207,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Patient login module added" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Initial_changes" />
+    <MESSAGE value="Updated the Patients to Users." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Patients to Users." />
   </component>
   <component name="WindowStateProjectService">
     <state x="692" y="307" width="598" height="499" key="#Servers" timestamp="1594662281572">
@@ -229,10 +236,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="172" y="127" width="1648" height="853" key="DiffContextDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594664670580" />
-    <state x="779" y="311" width="447" height="491" key="FileChooserDialogImpl" timestamp="1594664777042">
+    <state x="779" y="311" width="447" height="491" key="FileChooserDialogImpl" timestamp="1594722016968">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="779" y="311" width="447" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1594664777042" />
+    <state x="779" y="311" width="447" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1594722016968" />
     <state x="491" y="240" width="1000" height="634" key="Git.Interactive.Rebase.Dialog" timestamp="1594660230601">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -277,10 +284,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="851" y="243" width="268" height="636" key="VCS.ChangeListViewerDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594661994215" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594721121524">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594722102420">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594721121524" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594722102420" />
     <state x="850" y="270" width="282" height="573" key="VcsDiffUtil.ChangesDialog" timestamp="1594662297199">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -313,14 +320,14 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1594664490792" />
-    <state x="829" y="347" width="623" height="419" key="svn.repositoryBrowser" timestamp="1594663135817">
+    <state x="829" y="347" width="623" height="419" key="svn.repositoryBrowser" timestamp="1594721987532">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="829" y="347" width="623" height="419" key="svn.repositoryBrowser/72.27.1848.1053@72.27.1848.1053" timestamp="1594663135817" />
-    <state x="910" y="324" width="450" height="472" key="svn4idea.import.options" timestamp="1594661565225">
+    <state x="829" y="347" width="623" height="419" key="svn.repositoryBrowser/72.27.1848.1053@72.27.1848.1053" timestamp="1594721987532" />
+    <state x="910" y="324" width="511" height="479" key="svn4idea.import.options" timestamp="1594721873791">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="910" y="324" width="450" height="472" key="svn4idea.import.options/72.27.1848.1053@72.27.1848.1053" timestamp="1594661565225" />
+    <state x="910" y="324" width="511" height="479" key="svn4idea.import.options/72.27.1848.1053@72.27.1848.1053" timestamp="1594721873791" />
     <state x="721" y="445" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1594718586057">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
