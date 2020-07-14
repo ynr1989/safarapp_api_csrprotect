@@ -20,21 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c4f57fa-9b63-4016-950a-39ded36900f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,12 +70,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../git_code" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/login" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/login" />
       <recent name="$PROJECT_DIR$/loginmodule" />
@@ -94,6 +80,37 @@
       <recent name="$PROJECT_DIR$/common" />
       <recent name="$PROJECT_DIR$/patients" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/login" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="safarapp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/safarapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/safarapp/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.settings" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -204,6 +221,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="761" y="394" width="459" height="325" key="AbstractVcsHelper.FilterDialog.org.jetbrains.idea.svn.history.SvnVersionFilterComponent/72.27.1848.1053@72.27.1848.1053" timestamp="1594660951095" />
+    <state x="602" y="121" width="777" height="871" key="CommitChangelistDialog2" timestamp="1594720294579">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="602" y="121" width="777" height="871" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1594720294579" />
     <state x="172" y="127" width="1648" height="853" key="DiffContextDialog" timestamp="1594664670580">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -220,30 +241,46 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="827" y="457" width="328" height="200" key="Github.Dialog.Accounts.Choose/72.27.1848.1053@72.27.1848.1053" timestamp="1594662629076" />
-    <state x="854" y="453" width="547" height="243" key="Github.ShareDialog" timestamp="1594664245973">
+    <state x="854" y="453" width="547" height="243" key="Github.ShareDialog" timestamp="1594720890397">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="854" y="453" width="547" height="243" key="Github.ShareDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594664245973" />
+    <state x="854" y="453" width="547" height="243" key="Github.ShareDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594720890397" />
     <state x="837" y="240" width="501" height="633" key="Github.UntrackedFilesDialog" timestamp="1593705564147">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="837" y="240" width="501" height="633" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1593705564147" />
+    <state width="1825" height="275" key="GridCell.Tab.0.bottom" timestamp="1594719735769">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1594719735769" />
+    <state width="1825" height="275" key="GridCell.Tab.0.center" timestamp="1594719735768">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1594719735768" />
+    <state width="1825" height="275" key="GridCell.Tab.0.left" timestamp="1594719735768">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1594719735768" />
+    <state width="1825" height="275" key="GridCell.Tab.0.right" timestamp="1594719735769">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1825" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1594719735769" />
     <state x="831" y="237" width="320" height="640" key="RollbackChangesDialog" timestamp="1594137758059">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="831" y="237" width="320" height="640" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594137758059" />
-    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1594664444260">
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1594720522553">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1594664444260" />
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1594720522553" />
     <state x="851" y="243" width="268" height="636" key="VCS.ChangeListViewerDialog" timestamp="1594661994215">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="851" y="243" width="268" height="636" key="VCS.ChangeListViewerDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594661994215" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594663574373">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594721121524">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594663574373" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594721121524" />
     <state x="850" y="270" width="282" height="573" key="VcsDiffUtil.ChangesDialog" timestamp="1594662297199">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -284,5 +321,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="910" y="324" width="450" height="472" key="svn4idea.import.options/72.27.1848.1053@72.27.1848.1053" timestamp="1594661565225" />
+    <state x="721" y="445" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1594718586057">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="721" y="445" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594718586057" />
   </component>
 </project>
