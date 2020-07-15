@@ -30,6 +30,7 @@ def patient_list(request):
 @api_view(['POST'])
 @csrf_exempt
 def register(request):
+    print("Redister called.....")
     if request.method == 'POST':
         serializer_data = JSONParser().parse(request)
         serializer = UserSerializer(data=serializer_data)

@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4f57fa-9b63-4016-950a-39ded36900f2" name="Default Changelist" comment="Updated the Patients to Users.">
+    <list default="true" id="8c4f57fa-9b63-4016-950a-39ded36900f2" name="Default Changelist" comment="Updated the URLS and requiremets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,19 +66,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/login" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/login" />
       <recent name="$PROJECT_DIR$/loginmodule" />
       <recent name="$PROJECT_DIR$/auth" />
       <recent name="$PROJECT_DIR$/common" />
-      <recent name="$PROJECT_DIR$/patients" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/login" />
     </key>
   </component>
   <component name="RunManager">
@@ -142,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594722096861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated the URLS and requiremets">
+      <created>1594722475681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594722475682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -209,7 +215,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Initial_changes" />
     <MESSAGE value="Updated the Patients to Users." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Patients to Users." />
+    <MESSAGE value="Updated the URLS and requiremets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the URLS and requiremets" />
   </component>
   <component name="WindowStateProjectService">
     <state x="692" y="307" width="598" height="499" key="#Servers" timestamp="1594662281572">
@@ -284,10 +291,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="851" y="243" width="268" height="636" key="VCS.ChangeListViewerDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594661994215" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594722102420">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594722480149">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594722102420" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594722480149" />
     <state x="850" y="270" width="282" height="573" key="VcsDiffUtil.ChangesDialog" timestamp="1594662297199">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -296,14 +303,18 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594664093328" />
+    <state x="811" y="274" width="432" height="623" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594744693494">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="811" y="274" width="432" height="623" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1594744693494" />
     <state x="767" y="468" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594662608984">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="767" y="468" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594662608984" />
-    <state x="687" y="292" width="691" height="580" key="find.popup" timestamp="1594658954005">
+    <state x="687" y="292" width="691" height="580" key="find.popup" timestamp="1594837288478">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="687" y="292" width="691" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1594658954005" />
+    <state x="687" y="292" width="691" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1594837288478" />
     <state x="755" y="342" width="471" height="430" key="git4idea.merge.GitMergeDialog" timestamp="1594661910485">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -332,5 +343,16 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="721" y="445" width="540" height="223" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594718586057" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/users/views.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

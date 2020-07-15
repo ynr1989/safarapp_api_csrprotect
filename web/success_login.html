@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>
+        Moderation
+        </title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="//safar-marketing.s3.amazonaws.com/img/favicon.ico">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700|Oswald:300,400,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+
+        <link rel="stylesheet" href="//safar-marketing.s3.amazonaws.com/dist/styles/main.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+
+
+
+
+
+<!-- Open Graph data -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125020376-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-125020376-1');
+    </script>
+
+</head>
+
+<body class="">
+
+<!--[if IE]>
+  <div class="alert alert-warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+
+
+
+
+
+
+
+<div class="nav-top-strip grey-bg">
+    <div class="container-fluid">
+        <div class="col-sm-12">
+
+            <a href="/contact/"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a>
+
+
+                <a href="/auth/login/"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login</a>
+
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img class="navbar-logo" src="https://s3.amazonaws.com/safar-marketing/img/safar-logo.svg" alt="Safar Logo"/></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <li class="nav-item">
+
+                        <a class="nav-link" href="/why-safar/">Why Safar?</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                        <a class="nav-link" href="/how-it-works/">How it works</a>
+
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+    <section class="cream-bg">
+            <div class="container-fluid">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+
+                    <h2>LOGIN SUCESS</h2>
+
+                     <p>You are succesfully authenticated. Click the below button to get the User details</p>
+                        <p> <button type="button" class="btn btn-primary" onclick="getDetails();"> Get User Details </button> </p>
+
+                </div>
+            </div>
+        </section>
+
+
+<script>
+ function getDetails() {
+    alert("Call the User");
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://localhost:8000/api/patient/register/", true);
+    xhttp.setRequestHeader('Content-type', 'application/json');
+    xhttp.send(JSON.stringify(object));
+    xhttp.onreadystatechange = function() {
+             alert(this.responseText);
+    };
+}
+</script>
+
+
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="col-sm-6">
+            <ul>
+                <li><a href="/about-safar/">About SAFAR</a></li>
+                <li><a href="/faqs/">FAQs</a></li>
+                <li><a href="/partners/">Partners</a></li>
+                <li><a href="/corporate/">Corporate</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6 right">
+            <ul>
+                <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+                <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            </ul>
+            © 2020 Safar. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+
+
+    <script src="//safar-marketing.s3.amazonaws.com/dist/scripts/main.js"></script>
+
+
+
+<!-- Analytics -->
+
+
+
+</body>
+</html>
