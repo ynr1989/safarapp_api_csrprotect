@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c4f57fa-9b63-4016-950a-39ded36900f2" name="Default Changelist" comment="Updated the URLS and requiremets">
+    <list default="true" id="8c4f57fa-9b63-4016-950a-39ded36900f2" name="Default Changelist" comment="Provided the UI to signup and login..">
+      <change afterPath="$PROJECT_DIR$/users/migrations/0002_auto_20200714_0943.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/reg_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/reg_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/success_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/success_login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594722475682</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Provided the UI to signup and login..">
+      <created>1594838376572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594838376572</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -216,7 +227,8 @@
     <MESSAGE value="Initial_changes" />
     <MESSAGE value="Updated the Patients to Users." />
     <MESSAGE value="Updated the URLS and requiremets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the URLS and requiremets" />
+    <MESSAGE value="Provided the UI to signup and login.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Provided the UI to signup and login.." />
   </component>
   <component name="WindowStateProjectService">
     <state x="692" y="307" width="598" height="499" key="#Servers" timestamp="1594662281572">
@@ -239,10 +251,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="602" y="121" width="777" height="871" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1594720294579" />
-    <state x="172" y="127" width="1648" height="853" key="DiffContextDialog" timestamp="1594664670580">
+    <state x="172" y="127" width="1648" height="853" key="DiffContextDialog" timestamp="1594838386001">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="172" y="127" width="1648" height="853" key="DiffContextDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594664670580" />
+    <state x="172" y="127" width="1648" height="853" key="DiffContextDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594838386001" />
     <state x="779" y="311" width="447" height="491" key="FileChooserDialogImpl" timestamp="1594722016968">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -291,10 +303,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="851" y="243" width="268" height="636" key="VCS.ChangeListViewerDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1594661994215" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594722480149">
+    <state x="591" y="289" width="1051" height="535" key="Vcs.Push.Dialog.v2" timestamp="1594838394178">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594722480149" />
+    <state x="591" y="289" width="1051" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594838394178" />
     <state x="850" y="270" width="282" height="573" key="VcsDiffUtil.ChangesDialog" timestamp="1594662297199">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -311,10 +323,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="767" y="468" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1594662608984" />
-    <state x="687" y="292" width="691" height="580" key="find.popup" timestamp="1594837288478">
+    <state x="687" y="292" width="691" height="580" key="find.popup" timestamp="1594878450476">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="687" y="292" width="691" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1594837288478" />
+    <state x="687" y="292" width="691" height="580" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1594878450476" />
     <state x="755" y="342" width="471" height="430" key="git4idea.merge.GitMergeDialog" timestamp="1594661910485">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

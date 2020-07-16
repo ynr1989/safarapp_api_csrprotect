@@ -252,7 +252,11 @@ var loginForm = $('#loginForm');
                     $btn.html('Login');
                     $btn.removeClass('disabled');
                 } else {
-                    window.location.replace('http://localhost:63342/safarapp/web/success_login.html');
+                    var res = JSON.stringify(data)
+                    var obj = jQuery.parseJSON(res);
+                    var token = obj.access_token;
+                    var userName = document.getElementById('id_username').value;
+                    window.location.replace('http://localhost:63342/safarapp/web/success_login.html?email='+userName+'&token='+token);
                 }
             },
             error: function() {

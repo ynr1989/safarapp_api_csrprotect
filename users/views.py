@@ -96,6 +96,7 @@ def login(request):
 @api_view(['POST'])
 @token_authentication_required
 def getPatientDetails(request):
+    print("Get Patient details...")
     email = request.data['email']
     patient = User.objects.get(email=email)
     patient_serializer = UserSerializer(patient)

@@ -124,7 +124,7 @@
 
                      <p>You are succesfully authenticated. Click the below button to get the User details</p>
                         <p> <button type="button" class="btn btn-primary" onclick="getDetails();"> Get User Details </button> </p>
-
+                         <iframe src="" id="myIframe" width = "555" height = "200" style="display:none">​</iframe>
                 </div>
             </div>
         </section>
@@ -133,18 +133,31 @@
 <script>
  function getDetails() {
     alert("Call the User");
-
+    var params = new URLSearchParams(window.location.search)
+    var email = params.get('email')
+    var jsonobj = new Object();
+    jsonobj.email = email;
+    var str = params.get('token')
+    var result = str.slice(1);
+    var token= result.replace(/'/g,'');
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost:8000/api/patient/register/", true);
+    xhttp.open("POST", "http://localhost:8000/api/patient/getPatient/", true);
     xhttp.setRequestHeader('Content-type', 'application/json');
-    xhttp.send(JSON.stringify(object));
+    xhttp.setRequestHeader('Authorization','Bearer '+token);
+    xhttp.send(JSON.stringify(jsonobj));
     xhttp.onreadystatechange = function() {
-             alert(this.responseText);
+            var iframeElement = document.getElementById('myIframe');
+            iframeElement.style.display="block";
+           // myIframe.src=this.responseText;
+            iframeElement.src = "about:blank";
+
+// Set the iframe's new HTML
+        iframeElement.contentWindow.document.open();
+        iframeElement.contentWindow.document.write(this.responseText);
+        iframeElementcontentWindow.document.close();
     };
 }
 </script>
-
-
 
 
 <footer>
