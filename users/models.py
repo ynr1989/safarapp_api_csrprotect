@@ -19,6 +19,10 @@ class User(models.Model):
     efirstName = models.CharField(max_length=300, blank=True, default='')
     esurName = models.CharField(max_length=300, blank=True, default='')
     emobile = models.CharField(max_length=300, blank=True, default='')
+    isPatient = models.BooleanField(default=False)
+    isDoctor = models.BooleanField(default=False)
+    isStaff = models.BooleanField(default=False)
+    isAdmin = models.BooleanField(default=False)
     activestatus = models.CharField(max_length=100, blank=True, default='YES')
     createdAt = models.DateTimeField(auto_now=False, auto_now_add=True)
 
