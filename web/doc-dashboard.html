@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doctor-Dashboard</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap4/bootstrap-grid.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap4/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/owl.carousel/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/_jquery/jquery.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap4/bootstrap-grid.min.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap4/bootstrap-grid.min.css"> -->
+		<!-- App & fonts-->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap">
+			
+			<!-- header -->
+			<header class="header header-style-02">
+				
+				<div class="container">
+					<div class="header-logo"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></div>
+					
+					
+					<!-- consult-nav -->
+					<nav class="consult-nav">
+						
+						<!-- consult-menu -->
+						<ul class="consult-menu">
+							<li><a href="#">Manage Consultation</a>
+							</li>
+							<li><a href="#">Manage Prescription</a>
+							</li>
+							<li><a href="#">Manage Reports</a>
+							</li>
+							<li><a href="#">Manage Slots</a>
+							</li>
+						</ul><!-- consult-menu -->
+						
+						<div class="navbar-toggle"><span></span><span></span><span></span></div>
+					</nav><!-- End / consult-nav -->
+					
+				</div>
+			</header><!-- End / header -->
+			
+			<!-- Content-->
+			<div class="md-content">
+				<!-- page-title -->
+				<div class="page-title pos-rel">
+					<div class="container">
+						<div class="pos-abs">
+							<div class='row d-flex justify-content-end'>
+							  <div class='col-lg-6 col-md-6 pl-0 pr-0'>
+								<div class='search-box'>
+								  <form class='search-form'>
+									<input class='form-control mb-0' placeholder='Patient Name / Mobile Number / Id' type='text'>
+									<button class='btn btn-link search-btn'>
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+								  </form>
+								</div>
+							  </div>
+						</div>
+
+						<div class="row doc-block">
+							<div class="col-12">
+								<div class="row">
+									<div class="col-lg-2 col-md-2 col-sm-2 col-12 avatar-circle"><img src="assets/img/avatars/doctor.png" alt="doc-avatar" /></div>
+										<div class="col-12">
+											<ul class="doc-details">
+											<li>Dr. Saima Qurbani</li>
+											<li>#GSDOC000001</li>
+											<li>Neuro Specialist</li>
+											</ul>
+										</div>
+								</div>
+							</div>
+							<div class="col-12 xs-0">
+								<div class="col-12 xs-0">
+									<ul class="doc-app-details pt-0 xs-0">
+									<li><span>18th</span> July, Sat</li>
+									<li><span>09</span> Total Appointments</li>
+									<li><span>02</span> Cancel Appointments</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div><!-- End / page-title -->
+
+			<!-- Section -->
+			<section class="md-section mt-5 sldr-slot circle-1">
+
+				<div class="container pb-3 position-relative">
+
+					<div class="row mt-5">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-12 pl-3"><h2 class="post-03__title">Manage Slots</h2></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-12 text-align pr-4">
+							<ul class="avail-mode">
+								<li><span class="circle unavail"></span> Not Available</li>
+								<li><span class="circle other-doc"></span> Other Doctor Available</li>
+								<li><span class="circle book-app"></span> Available</li>
+								<li><span class="circle booked"></span> Booked</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="demo" class="carousel slide position-relative" data-ride="carousel">
+						<div class="row">
+							<div class="col-2 offset-9">
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<i class="fa fa-chevron-left"></i>
+																</a>
+																<a class="carousel-control-next" href="#demo" data-slide="next">
+							<i class="fa fa-chevron-right"></i>
+																</a>
+							</div>
+							</div>
+
+							<!-- The slideshow -->
+							<div class="carousel-inner">
+							  <div class="carousel-item active carousel-item-left">
+									<div class="d-flex">
+											<div class="col-12 d-flex flex-column card pl-0 pr-0">
+													<div class="introduce card-body">
+														<h5 class="post-02__title pl-2 pr-2 mt-1">Saturday 18th July, 2020</h5>
+													<div class="flex-column-1 p-1">
+														<div class="row ml-0 mr-0">
+
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 9:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 13:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 14:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="book-app">Book Appointment</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 15:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="booked">Booked</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 16:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 17:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="book-app">Book Appointment</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 18:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="other-doc">Other Doc Available</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 19:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="book-app">Book Appointment</a></p>
+																</div>
+															</div>
+															
+
+														</div>
+													</div>
+												</div>
+											</div>
+									</div>
+
+								</div>	
+								<div class="carousel-item carousel-item-next carousel-item-left">
+										<div class="d-flex">
+											<div class="col-12 d-flex flex-column card pl-0 pr-0">
+												<div class="introduce card-body">
+													<h5 class="post-02__title pl-2 pr-2 mt-1">Saturday 19th July, 2020</h5>
+												<div class="flex-column-1 p-1">
+													<div class="row ml-0 mr-0">
+
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 9:00 AM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 13:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 14:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="#" class="book-app">Book Appointment</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 15:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 16:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 17:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="#" class="other-doc">Other Doc Available</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 18:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="#" class="book-app">Book Appointment</a></p>
+															</div>
+														</div>
+														<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+															<div class="slot-box">
+																<p><i class="fa fa-clock-o" aria-hidden="true"></i> 19:00 PM</p>
+																<p>1 time slot available</p>
+																<p><a href="#" class="book-app">Book Appointment</a></p>
+															</div>
+														</div>
+														
+
+													</div>
+												</div>
+											</div>
+										</div>
+										</div>
+
+									</div>
+									<div class="carousel-item ">
+											<div class="d-flex">
+												<div class="col-12 d-flex flex-column card pl-0 pr-0">
+													<div class="introduce card-body">
+														<h5 class="post-02__title pl-2 pr-2 mt-1">Saturday 20th July, 2020</h5>
+													<div class="flex-column-1 p-1">
+														<div class="row ml-0 mr-0">
+
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 9:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 12:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 13:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 14:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="book-app">Book Appointment</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 15:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="booked">Booked</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 16:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="javascript:void(0);" class="unavail">Unavailable</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 17:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="book-app">Book Appointment</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 18:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="book-app">Book Appointment</a></p>
+																</div>
+															</div>
+															<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-1">
+																<div class="slot-box">
+																	<p><i class="fa fa-clock-o" aria-hidden="true"></i> 19:00 PM</p>
+																	<p>1 time slot available</p>
+																	<p><a href="#" class="other-doc">Other Doc Available</a></p>
+																</div>
+															</div>
+															
+
+														</div>
+													</div>
+												</div>
+											</div>
+											</div>
+	
+										</div>
+							</div>
+			
+						  </div>
+
+			</div>
+			</section>
+			<!-- End / Section -->
+
+			<!-- Section -->
+			<section class="md-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-md-12 col-sm-9 col-12">
+							<h2 class="post-03__title">Manage Consultation</h2>
+							<div class="card man-con">
+								<div class="card-body p-0">
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-12 col-sm-3 col-12 xs-top">
+							<h2 class="post-03__title">Manage Reports</h2>
+							<div class="card man-con">
+								<div class="card-body p-0">
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-3 col-md-2 col-sm-3 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-9 col-md-9 col-sm-9 col-9"><h6>Thu 16th, July</h6> <span>Afshan Ibrahim</span></div>
+										<div class="col-12 offset-lg-0 offset-md-2">Patient called and says thanks...</div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-3 col-md-2 col-sm-3 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-9 col-md-9 col-sm-9 col-9"><h6>Thu 17th, July</h6> <span>Kelly Dodze</span></div>
+										<div class="col-12 offset-lg-0 offset-md-2">Patient called and says thanks...</div>
+									</div>
+									<div class="row mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-3 col-md-2 col-sm-3 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-9 col-md-9 col-sm-9 col-9"><h6>Thu 18th, July</h6> <span>Sarah Jain</span></div>
+										<div class="col-12 offset-lg-0 offset-md-2">Patient called and says thanks...</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End / Section -->
+
+			<!-- Section -->
+			<section class="md-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-md-12 col-sm-9 col-12">
+							<h2 class="post-03__title">Recent Member Activity</h2>
+							<div class="card man-con">
+								<div class="card-body p-0">
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-1 col-md-2 col-sm-1 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-4"><h6>Patient Name</h6> <span>Andy Battle</span></div>
+										<div class="col-lg-2 col-md-4 col-sm-2 col-4"><h6>Date</h6> <span>Sat 18th July</span></div>
+										<div class="col-lg-3 offset-lg-0 col-md-6 offset-md-2 col-sm-2 col-4"><h6>Health Status</h6> <span>Back Pain</span></div>
+										<div class="col-lg-3 col-md-4 col-sm-2 col-4"><h6>Payment Status</h6> <span>Confirmed</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-12 col-sm-3 col-12 xs-top">
+							<h2 class="post-03__title">Manage Prescription</h2>
+							<div class="card man-con">
+								<div class="card-body p-0">
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-3 col-md-2 col-sm-3 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-9 col-md-9 col-sm-9 col-9"><h6>Thu 16th, July</h6> <span>Afshan Ibrahim</span></div>
+										<div class="col-12 offset-lg-0 offset-md-2">Prescription details goes here...</div>
+									</div>
+									<div class="row brd-btm mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-3 col-md-2 col-sm-3 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-md-9 col-sm-9 col-9"><h6>Thu 17th, July</h6> <span>Kelly Dodze</span></div>
+										<div class="col-12 offset-lg-0 offset-md-2">Prescription details goes here...</div>
+									</div>
+									<div class="row mt-3 mb-3 ml-0 mr-0">
+										<div class="col-lg-3 col-md-2 col-sm-3 col-3"><img src="assets/img/avatars/patient.png" alt="patient-avatar" /></div>
+										<div class="col-lg-9 col-md-9 col-sm-9 col-9"><h6>Thu 18th, July</h6> <span>Sarah Jain</span></div>
+										<div class="col-12 offset-lg-0 offset-md-2">Prescription details goes here...</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End / Section -->
+				
+			</div>
+			<!-- End / Content-->
+			
+			<!-- footer -->
+			<footer class="footer mt-100">
+				<div class="footer-main">
+					<div class="row row-eq-height">
+						<div class="col-8 col-sm-7 col-md-9 col-lg-3 ">
+							<div class="footer-item consult_logo"><img src="assets/img/logo.png" alt="footer-logo"/>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
+							<div class="footer-item">
+									
+									<!-- widget-text__widget -->
+									<section class="widget-text-widget widget">
+										<div class="widget-text-content">
+											<ul>
+												<li><a href="about.html">About Safar</a></li>
+												<li><a href="partners.html">Partners </a></li>
+												<li><a href="corporate.html">Corporate</a></li>
+											</ul>
+										</div>
+									</section><!-- End / widget-text__widget -->
+									
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 ">
+							<div class="footer-item">
+									
+									<!-- widget-text__widget -->
+									<section class="widget-text-widget widget">
+										<div class="widget-text-content">
+											<ul>
+												<li><a href="faqs.html">Faq's </a></li>
+												<li><a href="terms-conditions.html">Terms & Conditions </a></li>
+												<li><a href="privacy-policy.html">Privacy Policy </a></li>
+											</ul>
+										</div>
+									</section><!-- End / widget-text__widget -->
+									
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-2 col-xl-2 " style="height: 149.425px;">
+							<div class="footer__item">
+								<h5>Corporate Partners</h5>
+								<div class="cp-txt">Helping your employees get the most out of their trip.</div>	
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2  consult-backToTop">
+							<div class="footer-item"><a href="#" id="back-to-top"> <i class="fa fa-angle-up" aria-hidden="true"> </i><span>Back To Top</span></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">2020 &copy; Copyright Safar. All rights Reserved.</div>
+			</footer>
+			<!-- End / footer -->
+			
+		</div>
+		<!-- Vendors-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.countUp/jquery.countup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/owl.carousel/owl.carousel.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/smoothscroll/SmoothScroll.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>
